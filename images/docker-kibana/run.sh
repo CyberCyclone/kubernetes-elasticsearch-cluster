@@ -4,8 +4,7 @@ set -e
 
 KIBANA_CONF_FILE="/opt/kibana/config/kibana.yml"
 BASE=/opt/kibana
-KIBANA_ES_URL=${KIBANA_ES_URL:-http://elasticsearch:9200}
-KIBANA_HOST=${KIBANA_HOST:-0.0.0.0}
+ELASTICSEARCH_HOSTS=${ELASTICSEARCH_HOSTS:-http://elasticsearch:9200}
 
 if [ ! -z "${ES_PLUGINS_INSTALL}" ]; then
    OLDIFS=$IFS

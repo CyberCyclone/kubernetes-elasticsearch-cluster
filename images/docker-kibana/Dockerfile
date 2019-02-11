@@ -21,4 +21,5 @@ ADD ./run.sh /run.sh
 
 EXPOSE 5601
 
-ENTRYPOINT /run.sh
+ENTRYPOINT ["/run.sh"]
+
